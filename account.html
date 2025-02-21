@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layer Watch</title>
+    <link rel="stylesheet" href="main-style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <style>
+      body{
+        background-color: #0c1c33;
+      }
+      .login-container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+      .login-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .input-group {
+        margin-bottom: 15px;
+      }
+      .input-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .login-btn {
+        width: 100%;
+        padding: 10px;
+        background: #0c1c33;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        border: 1px solid gray;
+
+      }
+      .login-btn2 {
+        width: 100%;
+        padding: 10px;
+        background: #0c1c33;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        display: none;
+        border: 1px solid gray;
+
+      }
+      .login-btn:hover {
+        background: #ffffff;
+        color: #0c1c33;
+      }
+      .signup-link {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .signup-link a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .signup-link a:hover {
+        text-decoration: underline;
+      }
+      .accountcontainer {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+      }
+      @media (max-width: 790px){
+        .login-btn2 {
+        width: 100%;
+        padding: 10px;
+        background: #0c1c33;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        display: block;
+        border: 1px solid gray;
+      }
+      .login-btn:hover {
+        background: #ffffff;
+        color: #0c1c33;
+      }
+      }
+    </style>
+    <nav>
+      <div class="logo">
+        <img src="images/logo-2.0.svg" alt="logo" />
+      </div>
+      <ul>
+        <li>
+          <a href="Ourstory.html">Our Story</a>
+        </li>
+        <li>
+          <a href="anarc.html">Anarc Watch</a>
+        </li>
+        <li>
+          <a href="straps.html">Arcs Strap</a>
+        </li>
+        <li>
+          <a href="skin.html">Skins</a>
+        </li>
+      </ul>
+      <div class="navicon">
+        <button>BUy Now</button>
+        <a href=""
+          ><i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i
+        ></a>
+        <a href=""><i class="fa-solid fa-user" style="color: #ffffff"></i></a>
+        <a href=""
+          ><i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i
+        ></a>
+      </div>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="Ourstory.html">Ourstory</a>
+        </li>
+        <li>
+          <a href="anarc.html">Anarc Wacth</a>
+        </li>
+        <li>
+          <a href="straps.html">Arcs Straps</a>
+        </li>
+        <li>
+          <a href="skin.html">Skins</a>
+        </li>
+        <li>
+          <a href="">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="accountcontainer">
+      <div class="login-container">
+        <h2>Login</h2>
+        <form>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required />
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <button type="submit" class="login-btn2">Login</button>
+        </form>
+        <div class="signup-link">
+          Don't have an account? <a href="#">Sign up</a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="footer">
+      <div class="fotlogo">
+        <img id="logo2" src="images/logo.svg" alt="" srcset="" />
+        <span id="copyspan"
+          >Copyright &copy; 2024,Layers. All rigths reserved.</span
+        >
+      </div>
+      <div class="fotminidiv">
+        <di class="fotmini">
+          <span class="fotspan"> <a href="anarc.html">Anarc Watch</a></span>
+          <span class="fotspan"><a href="skin.html">Skins</a></span>
+          <span class="fotspanmini">Customer Help Center</span>
+          <span class="fotspanmini">Privacy Policy</span>
+        </di>
+        <di class="fotmini">
+          <span class="fotspan"><a href="Ourstory.html">Our Story</a></span>
+          <span class="fotspan"><a href="straps.html">Arcs Straps</a></span>
+          <span class="fotspanmini">Get in touch</span>
+          <span class="fotspanmini">Sales Policy</span>
+        </di>
+        <di class="fotmini">
+          <div class="smallicon">
+            <a href="#"
+              ><i
+                id="smaolliconmini"
+                class="fa-brands fa-square-facebook"
+                style="color: #294b7a"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                id="smaolliconmini"
+                class="fa-brands fa-square-twitter"
+                style="color: #294b7a"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                id="smaolliconmini"
+                class="fa-brands fa-youtube"
+                style="color: #294b7a"
+              ></i
+            ></a>
+          </div>
+          <span class="fotspanmini">Terms Of Use</span>
+        </di>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

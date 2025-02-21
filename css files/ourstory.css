@@ -1,0 +1,181 @@
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(84, 84, 80);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* Reset default margin and padding */
+  margin: 0;
+  padding: 0;
+
+  /* Set font family and color */
+  font-family: Arial, sans-serif; /* or another readable font */
+  color: #ffffff; /* Sets text color, adjust for readability */
+
+  /* Background color and image */; /* Neutral background color */
+  background-size: cover; /* Scale the background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image tiling */
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+
+  /* Line height and text alignment */
+  line-height: 1.6; /* Improves readability */
+  text-align: left; /* Typically left-align for readability */
+
+  /* Responsive font size */
+  font-size: 16px; /* Standard font size */
+  @media (max-width: 790px) {
+    font-size: 15px; /* Adjusts font size for smaller screens */
+  }
+
+  /* Smoothing */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.responsive-box {
+  width: 100vw;
+  height: 60vh;
+  display: flex; /* Center the h1 both horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f8ff; /* Light blue background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for design */
+}
+
+/* Styling for h1 inside the div */
+.responsive-box .animated-h1 {
+  font-size: 60px; /* Scales with the viewport width */
+  color: #0c45ab; /* Dark text color */
+  margin: 0; /* Remove default margin */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1.5s ease;
+}
+.responsive-box .animated-h1.visible {
+    opacity: 1; /* Fully visible when in view */
+  }
+
+.responsive-box2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* Center the h1 both horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 12rem;
+  background-color: #0c1c33; /* Light blue background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for design */
+}
+.responsive-box3 {
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* Center the h1 both horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 12rem;
+  background-color: #ffffff; /* Light blue background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for design */
+}
+
+/* Styling for h1 inside the div */
+.responsive-box2 .animated-h1 {
+  font-size: 70px; /* Scales with the viewport width */
+  color: #ffffff; /* Dark text color */
+  margin: 0; /* Remove default margin */
+  text-align: center;
+  font-family: "Outfit";
+  font-weight: 600;
+  font-style: normal;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1.5s ease;
+}
+.responsive-box2 .animated-h1.visible {
+  opacity: 1;
+ 
+}
+.responsive-box3 .animated-h1 {
+  font-size: 70px; /* Scales with the viewport width */
+  color: #0c1c33; /* Dark text color */
+  margin: 0; /* Remove default margin */
+  text-align: center;
+  font-family: "Outfit";
+  font-weight: 600;
+  font-style: normal;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1.5s ease;
+}
+.responsive-box3 .animated-h1.visible {
+  opacity: 1;
+ 
+}
+@media screen and (max-width: 920px){
+    .responsive-box2{
+        width: 100vw;
+        height: 90vh;
+        
+    }
+    .responsive-box2 .animated-h1 {
+        font-size: 50px;
+    }
+    .responsive-box3{
+      width: 100vw;
+      height: 90vh;
+      
+  }
+  .responsive-box3 .animated-h1 {
+      font-size: 50px;
+  }
+}
+@media screen and (max-width: 720px){
+  .responsive-box2{
+      width: 100vw;
+      height: 100vh;
+      padding: 10rem;
+      
+  }
+  .responsive-box2 .animated-h1 {
+      font-size: 45px;
+  }
+  .responsive-box3{
+    width: 100vw;
+    height: 90vh;
+    
+}
+.responsive-box3 .animated-h1 {
+    font-size: 50px;
+}
+}
+@media screen and (max-width: 620px){
+  .responsive-box2{
+      width: 100vw;
+      height: 100vh;
+      padding: 2rem;
+      
+  }
+  .responsive-box3{
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    
+}
+  .responsive-box2 .animated-h1 {
+      font-size: 45px;
+  }
+  .responsive-box3 .animated-h1 {
+    font-size: 45px;
+}
+}
+@media screen and (max-width: 320px){
+  .responsive-box .animated-h1 {
+    font-size: 14vw;
+}
+.responsive-box2 .animated-h1 {
+  font-size: 14vw;
+}
+.responsive-box3 .animated-h1 {
+  font-size: 14vw;
+}
+}

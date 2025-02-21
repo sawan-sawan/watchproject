@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layer</title>
+
+    <link rel="stylesheet" href="main-style.css" />
+    <link rel="stylesheet" href="css files/ourstory.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo-2.0.svg" alt="logo" /></a>
+      </div>
+      <ul>
+        <li>
+          <a href="#">Our Story</a>
+        </li>
+        <li>
+          <a href="anarc.html">Anarc Watch</a>
+        </li>
+        <li>
+          <a href="#">Arcs Strap</a>
+        </li>
+        <li>
+          <a href="#">Skins</a>
+        </li>
+      </ul>
+      <div class="navicon">
+        <button>BUy Now</button>
+        <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i></a>
+        <a href="account.html"><i class="fa-solid fa-user" style="color: #ffffff"></i></a>
+        <a href=""><i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i></a>
+      </div>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="Ourstory.html">Ourstory</a>
+        </li>
+        <li>
+          <a href="anarc.html">Anarc Wacth</a>
+        </li>
+        <li>
+          <a href="straps.html">Arcs Straps</a>
+        </li>
+        <li>
+          <a href="skin.html">Skins</a>
+        </li>
+        <li>
+          <a href="account.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="responsive-box">
+      <h1 class="animated-h1">Chaos is Creativity</h1>
+    </div>
+    <div class="responsive-box2">
+      <span class="animated-h1"
+        >The've told us the rules. Fall in line.Play it safe. There's a place
+        for everything. And everyone has a place.
+      </span>
+    </div>
+    <div class="responsive-box3">
+      <span class="animated-h1"
+        >The've told us the rules. Fall in line.Play it safe. There's a place
+        for everything. And everyone has a place.
+      </span>
+    </div>
+    <br />
+    <div class="footer">
+      <div class="fotlogo">
+        <img id="logo2" src="images/logo.svg" alt="" srcset="" />
+        <span id="copyspan"
+          >Copyright &copy; 2024,Layers. All rigths reserved.</span
+        >
+      </div>
+      <div class="fotminidiv">
+        <di class="fotmini">
+          <span class="fotspan">Anarc Watch</span>
+          <span class="fotspan">Skins</span>
+          <span class="fotspanmini">Customer Help Center</span>
+          <span class="fotspanmini">Privacy Policy</span>
+        </di>
+        <di class="fotmini">
+          <span class="fotspan">Our Story</span>
+          <span class="fotspan">Arcs Straps</span>
+          <span class="fotspanmini">Get in touch</span>
+          <span class="fotspanmini">Sales Policy</span>
+        </di>
+        <di class="fotmini">
+          <div class="smallicon">
+            <a href="#"><i id="smaolliconmini" class="fa-brands fa-square-facebook" style="color:#294b7a;"></i></a>
+            <a href=""><i id="smaolliconmini" class="fa-brands fa-square-twitter" style="color:#294b7a;"></i></a>
+            <a href="#"><i id="smaolliconmini" class="fa-brands fa-youtube" style="color:#294b7a;"></i></a>
+          </div>
+          <span class="fotspanmini">Terms Of Use</span>
+        </di>
+      </div>
+    </div>
+    <script>
+      const fadeInElements = document.querySelectorAll(".animated-h1");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible"); 
+            } else {
+              entry.target.classList.remove("visible"); 
+            }
+          });
+        },
+        { threshold: 0.1 } 
+      );
+
+    
+      fadeInElements.forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
